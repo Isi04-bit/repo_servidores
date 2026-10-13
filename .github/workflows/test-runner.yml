@@ -1,0 +1,18 @@
+name: Probar Runner Debian
+
+on:
+  workflow_dispatch:
+
+jobs:
+  prueba:
+    runs-on: self-hosted
+
+    steps:
+      - name: Mostrar mensaje
+        run: echo "Hola desde mi Debian"
+
+      - name: Mostrar sistema
+        run: uname -a
+
+      - name: Mostrar usuario
+        run: whoami
